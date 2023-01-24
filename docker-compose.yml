@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  web:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt
+    restart: always
+    ports:
+      - 1883:1883
+      - 9001:9001
+    networks:
+      - default
+    volumes:
+      - ./config/:/mosquitto/config/:ro
+      - ./log/:/mosquitto/log/
+      - data:/mosquitto/data/
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
