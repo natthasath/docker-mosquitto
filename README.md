@@ -6,10 +6,15 @@ Mosquitto is an open-source MQTT broker that facilitates communication between I
 ![rating](https://img.shields.io/badge/rating-★★★★★-yellow)
 ![uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
 
-### 🥈 Run
+### 🥈 MQTT
 
-- [mqtt://localhost:1883/](mqtt://localhost:1883/) username : `admin` password : `admin`
-- [mqtts://localhost:9001/](mqtts://localhost:9001/) username : `admin` password : `admin`
+- username : `admin` password : `admin`
+```shell
+mqtt://localhost:1883/
+mqtts://localhost:9001/
+```
+
+### 🥈 Run
 
 ```shell
 docker-compose up -d
