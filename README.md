@@ -13,7 +13,6 @@ Mosquitto is an open-source MQTT broker that facilitates communication between I
 
 ```shell
 docker-compose up -d
-```mpose up -d
 ```
 
 ### 📕 Publisher
